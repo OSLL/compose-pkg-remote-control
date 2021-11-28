@@ -61,24 +61,47 @@
 
     </script>
     <style>
-        body {
+        .main-container {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
         }
 
-        h1 {
+        .main-container .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-container .header h1 {
+            color: #8a8afd;
+        }
+
+        .main-container .header h3 {
             color: #9999FF;
         }
 
-        p {
+        .main-container .header h3 .topic {
+            color: #2de0a5;
+        }
+
+        .body p {
             color: #CCCCFF;
         }
+
     </style>
 </head>
 <body>
-<h1>Simple Example</h1>
-<p>Check the <b>JavaScript console</b> for the output.</p>
+<div class="main-container">
+    <div class="header">
+        <h1>ROSLIB intro steps</h1>
+        <h3>Publish and subscribe the <i class="topic">/joystick</i> topic</h3>
+    </div>
+    <div class="body">
+        <p>Check the <b>JavaScript console</b> for the output.</p>
+    </div>
+</div>
 </body>
 </html>
